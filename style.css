@@ -12,3 +12,10 @@
 .background{
     background-color: aqua;
 }
+.aster{
+    color: red;
+    text-emphasis: 12px;
+    text-decoration: solid;
+    /* font-size: large; */
+    font-weight: bold;
+}
