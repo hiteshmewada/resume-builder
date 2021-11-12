@@ -1,187 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Resume Builder</title>
-  </head>
-  <body>
-    <div class="container" id="cv-form">
-      <h1 class="text-center my-2"><u>RESUME GENERATOR</u></h1>
-      <p class="text-center"> <a href="https://www.linkedin.com/in/hitu04/" target="_blank"> By Hitesh Mewada</a></p>
-      <p class="aster">Fields in * are mandatory</p>
-      <div class="row">
-        <div class="col-md-6">
-          <h3><u style="color: rebeccapurple">Personal Information</u></h3>
-          <div class="form-group mt-2">
-            <label for="namefield">Your Name<sup class="aster">*</sup> </label>
-            <input
-              required
-              autofocus
-              type="text"
-              name=""
-              id="namefield"
-              class="form-control"
-              placeholder="Enter your name here"
-            />
-          </div>
 
-          <div class="form-group mt-2">
-            <label for="contactfield">Your Contacts<sup class="aster">*</sup></label>
-            <input
-              required
-              type="number"
-              name=""
-              id="contactfield"
-              class="form-control"
-              placeholder="Enter your Phone number here"
-            />
-          </div>
-          <div class="form-group mt-2">
-            <label for="addfield">Your Address </label>
-            <textarea
-              name=""
-              id="addfield"
-              cols="30"
-              rows="5"
-              class="form-control"
-              placeholder="Type your Address here"
-            ></textarea>
-          </div>
-          <!-- <div class="form-group">
-            <label for="" class="mt-3">Select your photo<sup class="aster">*</sup></label>
-            <input
-              required
-              id="imgfield"
-              type="file"
-              class="form-control mt-1"
-            />
-          </div> -->
-          <p class="text-secondary my-3">Important Links</p>
-          <div class="form-group mt-2">
-            <label for="fbfield">Facebook Link </label>
-            <input
-              type="text"
-              name=""
-              id="fbfield"
-              class="form-control"
-              placeholder="Type your Facebook Link here"
-            />
-          </div>
-          <div class="form-group mt-2">
-            <label for="instafield">Instagram Link </label>
-            <input
-              type="text"
-              name=""
-              id="instafield"
-              class="form-control"
-              placeholder="Type your Instagram Link here"
-            />
-          </div>
-          <div class="form-group mt-2">
-            <label for="linkfield">LinkedIn Link<sup class="aster">*</sup> </label>
-            <input
-              required
-              type="text"
-              name=""
-              id="linkfield"
-              class="form-control"
-              placeholder="Type your LinkedIn Link here"
-            />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Resume Builder</title>
+</head>
+
+<body>
+  <div class="container" id="cv-form">
+    <h1 class="text-center my-2"><u>RESUME GENERATOR</u></h1>
+    <p class="text-center">
+      <a href="https://www.linkedin.com/in/hitu04/" target="_blank">
+        By Hitesh Mewada</a>
+    </p>
+    <p class="aster">Fields in * are mandatory</p>
+    <div class="row">
+      <div class="col-md-6">
+        <h3><u style="color: rebeccapurple">Personal Information</u></h3>
+        <div class="form-group mt-2">
+          <label for="namefield" class="form-label">Your Name<sup class="aster">*</sup> </label>
+          <input autofocus autocomplete="name" type="text" name="" id="namefield" required class="form-control"
+            placeholder="Enter your full name here" />
+        </div>
+        <div class="form-group mt-2">
+          <label for="occfield">Your Occupation<sup class="aster">*</sup>
+          </label>
+          <input autocomplete="organization-title" required type="text" name="" id="occfield" class="form-control"
+            placeholder="Enter your occupation here" />
+        </div>
+        <div class="form-group mt-2">
+          <label for="contactfield">Your Contacts<sup class="aster">*</sup></label>
+          <input autocomplete="tel-area-code" required type="number" name="" id="contactfield" class="form-control"
+            placeholder="Enter your Phone number here" />
+        </div>
+        <div class="form-group mt-2">
+          <label for="emailfield">Your email address<sup class="aster">*</sup>
+          </label>
+          <input autocomplete="email" required type="text" name="" id="emailfield" class="form-control"
+            placeholder="Enter your email address here" />
+        </div>
+        <div class="form-group mt-2">
+          <label for="webfield">Your website
+          </label>
+          <input autocomplete="work" type="text" name="" id="webfield" class="form-control"
+            placeholder="Enter your website here (if any)" />
+        </div>
+        <div class="form-group mt-2">
+          <label for="addfield">Your Address </label>
+          <textarea autocomplete="street-address" name="" id="addfield" cols="30" rows="5" class="form-control"
+            placeholder="Type your Address here"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="" class="mt-3">Select your photo<sup class="aster">*</sup></label>
+          <input required id="imgfield" type="file" class="form-control mt-1" />
+        </div>
+        <p class="text-secondary my-3">Important Links</p>
+        <div class="form-group mt-2">
+          <label for="fbfield">Facebook Link </label>
+          <input type="text" name="" id="fbfield" class="form-control" placeholder="Type your Facebook Link here" />
+        </div>
+        <div class="form-group mt-2">
+          <label for="instafield">Instagram Link </label>
+          <input type="text" name="" id="instafield" class="form-control" placeholder="Type your Instagram Link here" />
+        </div>
+        <div class="form-group mt-2">
+          <label for="linkfield">LinkedIn Link<sup class="aster">*</sup>
+          </label>
+          <input required type="text" name="" id="linkfield" class="form-control"
+            placeholder="Type your LinkedIn Link here" />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3><u style="color: rebeccapurple">Professional Information</u></h3>
+        <div class="form-group mt-2" id="ps">
+          <label for="">Professional Skills<sup class="aster">*</sup> </label>
+          <input required placeholder="Add your Professional Skill here" type="text" class="form-control psfield" />
+
+          <!-- new button -->
+          <div class="container text-center mt-2" id="psAddButt">
+            <button autofocus onclick="addNewPSField()" class="btn btn-primary btn-sm">
+              Add More
+            </button>
           </div>
         </div>
-        <div class="col-md-6">
-          <h3><u style="color: rebeccapurple">Professional Information</u></h3>
-          <div class="form-group mt-2">
-            <label for="">Objective<sup class="aster">*</sup> </label>
-            <textarea
-              required
-              id="objective"
-              rows="5"
-              class="form-control"
-              placeholder="Type your Objective here"
-            ></textarea>
+
+        <div class="form-group mt-2">
+          <label for="">Objective<sup class="aster">*</sup> </label>
+          <textarea required id="objective" rows="5" class="form-control"
+            placeholder="Type your Objective here"></textarea>
+        </div>
+        <div class="form-group mt-2" id="we">
+          <label for="">Work Experience<sup class="aster">*</sup> </label>
+          <textarea required rows="3" class="form-control wefield"
+            placeholder="Add your Work Experience here"></textarea>
+          <!-- new button -->
+          <div class="container text-center mt-2" id="weAddButt">
+            <button autofocus onclick="addNewWEField()" class="btn btn-primary btn-sm">
+              Add More
+            </button>
           </div>
-          <div class="form-group mt-2" id="we">
-            <label for="">Work Experience<sup class="aster">*</sup> </label>
-            <textarea
-              required
-              rows="3"
-              class="form-control wefield"
-              placeholder="Add your Work Experience here"
-            ></textarea>
-            <!-- new button -->
-            <div class="container text-center mt-2" id="weAddButt">
-              <button autofocus onclick="addNewWEField()" class="btn btn-primary btn-sm">
-                Add More
-              </button>
-            </div>
-          </div>
-          <div class="form-group mt-2" id="aq">
-            <label for="">Academic Qualification<sup class="aster">*</sup></label>
-            <textarea
-              required
-              rows="3"
-              class="form-control aqfield"
-              placeholder="Add your Academic Qualification here"
-            ></textarea>
-            <div class="container text-center mt-2" id="aqAddButt">
-              <button onclick="addAQNewFiled()" class="btn btn-primary btn-sm">
-                Add More
-              </button>
-            </div>
+        </div>
+        <div class="form-group mt-2" id="aq">
+          <label for="">Academic Qualification<sup class="aster">*</sup></label>
+          <textarea required rows="3" class="form-control aqfield"
+            placeholder="Add your Academic Qualification here"></textarea>
+          <div class="container text-center mt-2" id="aqAddButt">
+            <button onclick="addAQNewFiled()" class="btn btn-primary btn-sm">
+              Add More
+            </button>
           </div>
         </div>
       </div>
-      <div class="container text-center mt-3">
-        <button onclick="generateCV()" class="btn btn-primary btn-lg">
-          Generate Resume
-        </button>
-      </div>
-      <br />
-      <br />
     </div>
-    <!-- cv template -->
-    <div class="container" id="cv-template">
-      <!-- <h1>This is template</h1> -->
-      <div class="row">
-        <div class="col-md-4 text-center py-5 background">
-          <!-- first col -->
-          <img
-            src="https://www.pngfind.com/pngs/m/676-6764065_default-profile-picture-transparent-hd-png-download.png"
-            alt=""
-            class="img-fluid myimg"
-            id="img"
-          />
-          <div class="container">
-            <p id="nameT">Hitesh Mewada</p>
-            <p id="contactT">8850381647</p>
-            <p id="addT">addreses</p>
-            <hr />
-            <p>
-              <a id="fbT" href="">Facebook</a>
-            </p>
-            <p>
-              <a id="instaT" href="">Instagram</a>
-            </p>
-            <p>
-              <a id="linkT" href="">LinkedIn</a>
-            </p>
-          </div>
+    <div class="container text-center mt-3">
+      <button onclick="generateCV()" class="btn btn-primary btn-lg">
+        Generate Resume
+      </button>
+    </div>
+    <br />
+    <br />
+  </div>
+  <!-- cv template -->
+  <div class="container" id="cv-template">
+    <!-- <h1>This is template</h1> -->
+    <div class="row">
+      <div class="col-md-5 text-center py-5 background">
+        <!-- first col -->
+        <img src="https://www.pngfind.com/pngs/m/676-6764065_default-profile-picture-transparent-hd-png-download.png"
+          alt="" class="img-fluid myimg" id="img" />
+        <div class="container">
+          <p id="nameT">Hitesh Mewada</p>
+          <p id="emailT">mewadahitesh00@gmail.com</p>
+          <p id="contactT">8850381647</p>
+          <p id="webT">abcdef</p>
+          <p id="addT">addreses</p>
+          <hr />
+          <p>
+            <a id="fbT" href="">Facebook</a>
+          </p>
+          <p>
+            <a id="instaT" href="">Instagram</a>
+          </p>
+          <p>
+            <a id="linkT" href="">LinkedIn</a>
+          </p>
         </div>
-        <div class="col-md-8 py-5">
-          <!-- second col -->
-          <h1  id="nameT2" class="text-center" style="font-weight: 900">
-            Hitesh mewada
+      </div>
+      <div class="col-md-7 py-5">
+        <!-- second col -->
+        <h1 id="nameT2" class="text-center" style="font-weight: 900">
+          Hitesh mewada
+        </h1>
+        <!-- <br> -->
+        <h2 id="occT" class="text-center" style="font-weight: 700">
+          Student
           </h1>
+          <!-- skills -->
+          <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Professional Skills</h3>
+            </div>
+            <div class="card-body">
+              <ul id="psT">
+                <li>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Earum, harum?
+                </li>
+
+                <li>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Earum, harum?
+                </li>
+
+                <li>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Earum, harum?
+                </li>
+              </ul>
+            </div>
+          </div>
           <!-- Objective Card -->
           <div class="card mt-4">
             <div class="card-header background">
@@ -244,21 +246,25 @@
               </ul>
             </div>
           </div>
-        </div>
-        <div class="container mt-3 text-center">
-          <button onclick="printCV()" class="btn background">
-            Print Resume
-          </button>
-        </div>
-        <br />
-        <br /><br />
       </div>
+      <div class="container mt-3 text-center">
+        <button onclick="printResume()" class="btn background">
+          Print Resume
+        </button>
+      </div>
+      <br />
+      <br />
+      <marquee behavior="" direction="">
+        <a href="mailto:mewadahitesh00@gmail.com">For suggestions and queries: Click
+          Here</a>
+      </marquee>
+      <br /><br />
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
